@@ -86,12 +86,6 @@ snippet ism "is mounted"
 isMounted()
 endsnippet
 
-snippet jsx "define jsx dom" b
-/**
- * @jsx React.DOM
- */
-endsnippet
-
 snippet pt "propTypes" b
 propTypes: {
 	${1}: React.PropTypes.${2:string}
@@ -99,12 +93,8 @@ propTypes: {
 endsnippet
 
 snippet rcc "create class/component" b
-${1:/**
-* @jsx React.DOM
-*/
-
 import React from 'react'
-}
+
 let ${2:ClassName} = React.createClass({
 
 render() {
